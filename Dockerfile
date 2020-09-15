@@ -7,4 +7,4 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \
     vim \
     htop \
     libgl1-mesa-glx
-RUN pip install opencv-python
+RUN pip install -r requirements.txt
