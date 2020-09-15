@@ -6,3 +6,4 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \
     curl \
     vim \
     htop
+RUN pip install opencv-python
