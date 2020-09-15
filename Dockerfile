@@ -7,5 +7,5 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \
     vim \
     htop \
     libgl1-mesa-glx
-RUN pip install -r requirements.txt
 COPY ./requirements.txt ./
+RUN pip install -r requirements.txt
