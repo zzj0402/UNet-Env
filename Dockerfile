@@ -1,4 +1,4 @@
-FROM paperspace/fastai
+FROM ufoym/deepo:all-py36-jupyter
 ENV TZ=Pacific/Auckland
 RUN apt-get update
 RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \
