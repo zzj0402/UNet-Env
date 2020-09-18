@@ -1,4 +1,4 @@
-FROM ufoym/deepo:all-py36-jupyter
+FROM pytorch/pytorch:1.5-cuda10.1-cudnn7-devel
 ENV TZ=Pacific/Auckland
 RUN apt-get -y install libgl1-mesa-glx
 COPY ./requirements.txt ./
