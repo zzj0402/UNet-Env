@@ -1,6 +1,12 @@
 FROM pytorch/pytorch:1.5-cuda10.1-cudnn7-devel
 ENV TZ=Pacific/Auckland
-RUN apt-get -y install libgl1-mesa-glx
+RUN apt-get update
+RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \
+    software-properties-common \
+    curl \
+    vim \
+    htop \
+    libgl1-mesa-glx
 COPY ./requirements.txt ./
-COPY ./unet.py ./
+COPY ./unet.ipynb ./
 RUN pip install -r requirements.txt
