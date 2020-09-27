@@ -8,5 +8,5 @@ RUN DEBIAN_FRONTEND="noninteractive" apt-get -y install tzdata \
     htop \
     libgl1-mesa-glx
 COPY ./requirements.txt ./
-COPY ./unet.ipynb ./
+COPY ./unet.py ./
 RUN pip install -r requirements.txt
