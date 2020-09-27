@@ -285,7 +285,7 @@ class FocalLoss(nn.Module):
             ((-max_val).exp() + (-input - max_val).exp()).log()
         invprobs = F.logsigmoid(-input * (target * 2.0 - 1.0))
         loss = (invprobs * self.gamma).exp() * loss
-        return loss.mean()[]
+        return loss.mean()
 
 
 class MixedLoss(nn.Module):
