@@ -624,13 +624,5 @@ I've learnt a lot from fellow kagglers, I've borrowed a lot of code from you guy
 Kaggle is <3
 """
 
-# read the test images
-image_test = 
-# convert labels to masks using rle2mask function
 
-# show the following image and mask
-idx = random.choice(range(16))
-plt.imshow(images_test[idx][0], cmap='bone')
-plt.imshow(masks_test[idx][0], alpha=0.2, cmap='Reds')
-plt.show()
 
